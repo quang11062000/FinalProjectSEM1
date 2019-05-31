@@ -24,3 +24,5 @@ F:\Project_SEM1\FinalProjectSEM1\BL\obj\Debug\netstandard2.0\BL.csproj.CoreCompi
 F:\Project_SEM1\FinalProjectSEM1\BL\obj\Debug\netstandard2.0\BL.AssemblyInfoInputs.cache
 F:\Project_SEM1\FinalProjectSEM1\BL\obj\Debug\netstandard2.0\BL.AssemblyInfo.cs
 F:\Project_SEM1\FinalProjectSEM1\BL\obj\Debug\netstandard2.0\BL.csproj.CopyComplete
+D:\FinalProjectSEM1\FinalProjectSEM1\BL\bin\Debug\netstandard2.0\DAL.dll
+D:\FinalProjectSEM1\FinalProjectSEM1\BL\bin\Debug\netstandard2.0\DAL.pdb

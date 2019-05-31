@@ -1,4 +1,7 @@
 using System;
+using BL;
+using persistence;
+using System.Collections.Generic;
 namespace PL
 {
     public class Menus
@@ -31,10 +34,35 @@ namespace PL
             Console.WriteLine(line2);
             string usname;
             string pw;
-            Console.Write("Enter username: ");
-            usname = Console.ReadLine();
-            Console.Write("Enter password: ");
-            pw = Console.ReadLine();
+            int flag = 0;
+            while (true)
+            {
+                flag = 0;
+                Console.Write("Enter username: ");
+                usname = Console.ReadLine();
+                Console.Write("Enter password: ");
+                pw = Console.ReadLine();
+                Class1 user1 = new Class1();
+                List<Customers> list = user1.GetUsernameandPass(usname, pw);
+                foreach (var item in list)
+                {
+                    if (item.UserName == usname && item.Password == pw)
+                    {
+                        flag = 1;
+                        Console.WriteLine("Welcome {0} to HAGL Ticketing system", item.CustomerName);
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("error username or password. Please Enter again!");
+                        continue;
+                    }
+                }
+                if(flag == 1){
+                    break;
+                }
+            }
+
         }
         public short Menu(string title, string[] menuItems)
         {

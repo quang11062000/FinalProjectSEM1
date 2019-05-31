@@ -32,3 +32,5 @@ F:\Project_SEM1\FinalProjectSEM1\PL\obj\Debug\netcoreapp2.2\PL.csproj.CoreCompil
 F:\Project_SEM1\FinalProjectSEM1\PL\obj\Debug\netcoreapp2.2\PL.AssemblyInfoInputs.cache
 F:\Project_SEM1\FinalProjectSEM1\PL\obj\Debug\netcoreapp2.2\PL.AssemblyInfo.cs
 F:\Project_SEM1\FinalProjectSEM1\PL\obj\Debug\netcoreapp2.2\PL.csproj.CopyComplete
+D:\FinalProjectSEM1\FinalProjectSEM1\PL\bin\Debug\netcoreapp2.2\DAL.dll
+D:\FinalProjectSEM1\FinalProjectSEM1\PL\bin\Debug\netcoreapp2.2\DAL.pdb

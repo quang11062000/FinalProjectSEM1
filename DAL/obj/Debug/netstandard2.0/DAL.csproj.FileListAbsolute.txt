@@ -10,3 +10,15 @@ F:\Project_SEM1\FinalProjectSEM1\DAL\bin\Debug\netstandard2.0\persistence.pdb
 F:\Project_SEM1\FinalProjectSEM1\DAL\obj\Debug\netstandard2.0\DAL.csproj.CopyComplete
 F:\Project_SEM1\FinalProjectSEM1\DAL\obj\Debug\netstandard2.0\DAL.dll
 F:\Project_SEM1\FinalProjectSEM1\DAL\obj\Debug\netstandard2.0\DAL.pdb
+D:\FinalProjectSEM1\FinalProjectSEM1\DAL\bin\Debug\netstandard2.0\DAL.deps.json
+D:\FinalProjectSEM1\FinalProjectSEM1\DAL\bin\Debug\netstandard2.0\DAL.dll
+D:\FinalProjectSEM1\FinalProjectSEM1\DAL\bin\Debug\netstandard2.0\DAL.pdb
+D:\FinalProjectSEM1\FinalProjectSEM1\DAL\bin\Debug\netstandard2.0\persistence.dll
+D:\FinalProjectSEM1\FinalProjectSEM1\DAL\bin\Debug\netstandard2.0\persistence.pdb
+D:\FinalProjectSEM1\FinalProjectSEM1\DAL\obj\Debug\netstandard2.0\DAL.csprojAssemblyReference.cache
+D:\FinalProjectSEM1\FinalProjectSEM1\DAL\obj\Debug\netstandard2.0\DAL.csproj.CoreCompileInputs.cache
+D:\FinalProjectSEM1\FinalProjectSEM1\DAL\obj\Debug\netstandard2.0\DAL.AssemblyInfoInputs.cache
+D:\FinalProjectSEM1\FinalProjectSEM1\DAL\obj\Debug\netstandard2.0\DAL.AssemblyInfo.cs
+D:\FinalProjectSEM1\FinalProjectSEM1\DAL\obj\Debug\netstandard2.0\DAL.csproj.CopyComplete
+D:\FinalProjectSEM1\FinalProjectSEM1\DAL\obj\Debug\netstandard2.0\DAL.dll
+D:\FinalProjectSEM1\FinalProjectSEM1\DAL\obj\Debug\netstandard2.0\DAL.pdb
