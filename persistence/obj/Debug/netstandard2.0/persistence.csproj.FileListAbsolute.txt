@@ -7,3 +7,12 @@ D:\FinalProjectSEM1\FinalProjectSEM1\persistence\obj\Debug\netstandard2.0\persis
 D:\FinalProjectSEM1\FinalProjectSEM1\persistence\obj\Debug\netstandard2.0\persistence.AssemblyInfo.cs
 D:\FinalProjectSEM1\FinalProjectSEM1\persistence\obj\Debug\netstandard2.0\persistence.dll
 D:\FinalProjectSEM1\FinalProjectSEM1\persistence\obj\Debug\netstandard2.0\persistence.pdb
+F:\Project_SEM1\FinalProjectSEM1\persistence\bin\Debug\netstandard2.0\persistence.deps.json
+F:\Project_SEM1\FinalProjectSEM1\persistence\bin\Debug\netstandard2.0\persistence.dll
+F:\Project_SEM1\FinalProjectSEM1\persistence\bin\Debug\netstandard2.0\persistence.pdb
+F:\Project_SEM1\FinalProjectSEM1\persistence\obj\Debug\netstandard2.0\persistence.csprojAssemblyReference.cache
+F:\Project_SEM1\FinalProjectSEM1\persistence\obj\Debug\netstandard2.0\persistence.csproj.CoreCompileInputs.cache
+F:\Project_SEM1\FinalProjectSEM1\persistence\obj\Debug\netstandard2.0\persistence.AssemblyInfoInputs.cache
+F:\Project_SEM1\FinalProjectSEM1\persistence\obj\Debug\netstandard2.0\persistence.AssemblyInfo.cs
+F:\Project_SEM1\FinalProjectSEM1\persistence\obj\Debug\netstandard2.0\persistence.dll
+F:\Project_SEM1\FinalProjectSEM1\persistence\obj\Debug\netstandard2.0\persistence.pdb

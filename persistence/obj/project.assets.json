@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FinalProjectSEM1\\FinalProjectSEM1\\persistence\\persistence.csproj",
+      "projectUniqueName": "f:\\Project_SEM1\\FinalProjectSEM1\\persistence\\persistence.csproj",
       "projectName": "persistence",
-      "projectPath": "D:\\FinalProjectSEM1\\FinalProjectSEM1\\persistence\\persistence.csproj",
+      "projectPath": "f:\\Project_SEM1\\FinalProjectSEM1\\persistence\\persistence.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\FinalProjectSEM1\\FinalProjectSEM1\\persistence\\obj\\",
+      "outputPath": "f:\\Project_SEM1\\FinalProjectSEM1\\persistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

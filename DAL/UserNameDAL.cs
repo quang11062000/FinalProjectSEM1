@@ -6,8 +6,6 @@ namespace DAL
 {
     public class UserNameDAL
     {
-        private static MySqlDataReader reader;
-        public Cus
-        
+        private static MySqlDataReader reader; 
     }
 }
