@@ -1,0 +1,16 @@
+D:\FinalProjectSEM1\FinalProjectSEM1\PL\bin\Debug\netcoreapp2.2\PL.deps.json
+D:\FinalProjectSEM1\FinalProjectSEM1\PL\bin\Debug\netcoreapp2.2\PL.runtimeconfig.json
+D:\FinalProjectSEM1\FinalProjectSEM1\PL\bin\Debug\netcoreapp2.2\PL.runtimeconfig.dev.json
+D:\FinalProjectSEM1\FinalProjectSEM1\PL\bin\Debug\netcoreapp2.2\PL.dll
+D:\FinalProjectSEM1\FinalProjectSEM1\PL\bin\Debug\netcoreapp2.2\PL.pdb
+D:\FinalProjectSEM1\FinalProjectSEM1\PL\bin\Debug\netcoreapp2.2\BL.dll
+D:\FinalProjectSEM1\FinalProjectSEM1\PL\bin\Debug\netcoreapp2.2\persistence.dll
+D:\FinalProjectSEM1\FinalProjectSEM1\PL\bin\Debug\netcoreapp2.2\persistence.pdb
+D:\FinalProjectSEM1\FinalProjectSEM1\PL\bin\Debug\netcoreapp2.2\BL.pdb
+D:\FinalProjectSEM1\FinalProjectSEM1\PL\obj\Debug\netcoreapp2.2\PL.csprojAssemblyReference.cache
+D:\FinalProjectSEM1\FinalProjectSEM1\PL\obj\Debug\netcoreapp2.2\PL.csproj.CoreCompileInputs.cache
+D:\FinalProjectSEM1\FinalProjectSEM1\PL\obj\Debug\netcoreapp2.2\PL.AssemblyInfoInputs.cache
+D:\FinalProjectSEM1\FinalProjectSEM1\PL\obj\Debug\netcoreapp2.2\PL.AssemblyInfo.cs
+D:\FinalProjectSEM1\FinalProjectSEM1\PL\obj\Debug\netcoreapp2.2\PL.csproj.CopyComplete
+D:\FinalProjectSEM1\FinalProjectSEM1\PL\obj\Debug\netcoreapp2.2\PL.dll
+D:\FinalProjectSEM1\FinalProjectSEM1\PL\obj\Debug\netcoreapp2.2\PL.pdb

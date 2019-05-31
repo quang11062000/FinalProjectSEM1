@@ -1,0 +1,9 @@
+D:\FinalProjectSEM1\FinalProjectSEM1\persistence\bin\Debug\netstandard2.0\persistence.deps.json
+D:\FinalProjectSEM1\FinalProjectSEM1\persistence\bin\Debug\netstandard2.0\persistence.dll
+D:\FinalProjectSEM1\FinalProjectSEM1\persistence\bin\Debug\netstandard2.0\persistence.pdb
+D:\FinalProjectSEM1\FinalProjectSEM1\persistence\obj\Debug\netstandard2.0\persistence.csprojAssemblyReference.cache
+D:\FinalProjectSEM1\FinalProjectSEM1\persistence\obj\Debug\netstandard2.0\persistence.csproj.CoreCompileInputs.cache
+D:\FinalProjectSEM1\FinalProjectSEM1\persistence\obj\Debug\netstandard2.0\persistence.AssemblyInfoInputs.cache
+D:\FinalProjectSEM1\FinalProjectSEM1\persistence\obj\Debug\netstandard2.0\persistence.AssemblyInfo.cs
+D:\FinalProjectSEM1\FinalProjectSEM1\persistence\obj\Debug\netstandard2.0\persistence.dll
+D:\FinalProjectSEM1\FinalProjectSEM1\persistence\obj\Debug\netstandard2.0\persistence.pdb

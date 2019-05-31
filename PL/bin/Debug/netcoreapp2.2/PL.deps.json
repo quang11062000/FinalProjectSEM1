@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "PL/1.0.0": {
+        "dependencies": {
+          "BL": "1.0.0",
+          "persistence": "1.0.0"
+        },
+        "runtime": {
+          "PL.dll": {}
+        }
+      },
+      "BL/1.0.0": {
+        "dependencies": {
+          "persistence": "1.0.0"
+        },
+        "runtime": {
+          "BL.dll": {}
+        }
+      },
+      "persistence/1.0.0": {
+        "runtime": {
+          "persistence.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "persistence/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
