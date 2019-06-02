@@ -1,43 +1,44 @@
-﻿using persistence;
-using MySql.Data.MySqlClient;
+﻿using System;
 using System.Collections.Generic;
-
+using MySql.Data.MySqlClient;
+using DAL;
+using persistence;
 namespace DAL
 {
     public class UserNameDAL
     {
         private static MySqlDataReader reader;
-        public List<Customers> GetUser(string UserName, string Password)
+
+
+        private static Customers GetACC(MySqlDataReader reader)
         {
-            List<Customers> listUser = new List<Customers>();
+            Customers cs = new Customers();
+            cs.UserName = reader.GetString("cus_username");
+            cs.Password = reader.GetString("cus_password");
+            return cs;
+        }
+        public Customers Login(string usname, string pw)
+        {
+            Customers cs = null;
             try
             {
-                string querry = @"select cus_username,cus_password from customers; ";
+                string query = @"select * from customers where cus_username = '" + usname + "'and cus_password = '" + pw + "';";
                 Dbhelper.OpenConnection();
-                reader = Dbhelper.ExecuteQuerry(querry);
-                Customers User = null;
-                while (reader.Read())
+                reader = Dbhelper.ExecuteQuerry(query);
+
+                if (reader.Read())
                 {
-                    User = GetUserUP(reader);
-                    listUser.Add(User);
+                    cs = GetACC(reader);
                 }
+                Dbhelper.CloseConnection();
 
             }
             catch (System.Exception)
             {
-
-                listUser = null;
+                cs = null;
             }
-            Dbhelper.CloseConnection();
-            return listUser;
-        }
-        private Customers GetUserUP(MySqlDataReader reader)
-        {
-            Customers c = new Customers();
-            c.UserName = reader.GetString("cus_username");
-            c.Password = reader.GetString("cus_password");
-            // c.CustomerName = reader.GetString("cus_name");
-            return c;
+            return cs;
         }
     }
 }
+

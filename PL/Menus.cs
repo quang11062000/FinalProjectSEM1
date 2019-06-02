@@ -2,6 +2,10 @@ using System;
 using BL;
 using persistence;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
+using System.Threading;
+using System.Text;
+
 namespace PL
 {
     public class Menus
@@ -34,35 +38,176 @@ namespace PL
             Console.WriteLine(line2);
             string usname;
             string pw;
-            int flag = 0;
+            string choice;
+            UserNameBL csbl = new UserNameBL();
+            Customers cs = null;
             while (true)
             {
-                flag = 0;
                 Console.Write("Enter username: ");
                 usname = Console.ReadLine();
                 Console.Write("Enter password: ");
-                pw = Console.ReadLine();
-                Class1 user1 = new Class1();
-                List<Customers> list = user1.GetUsernameandPass(usname, pw);
-                foreach (var item in list)
+                pw = Password();
+                Console.WriteLine("Dang dang nhap...");
+                Thread.Sleep(500);
+                if (validate(usname) != true || validate(pw) != true)
                 {
-                    if (item.UserName == usname && item.Password == pw)
+                    Console.Write("Tai khoan va mat khau khong duoc chua ki tu dac biet,Ban co muon nhap lai khong(Y/N)?");
+                    choice = Console.ReadLine().ToUpper();
+                    while (true)
                     {
-                        flag = 1;
-                        Console.WriteLine("Welcome {0} to HAGL Ticketing system", item.CustomerName);
+                        if (choice != "Y" && choice != "N")
+                        {
+                            Console.Write("Bạn chỉ được nhập (Y/N): ");
+                            choice = Console.ReadLine().ToUpper();
+                            continue;
+                        }
                         break;
                     }
-                    else
+
+                    switch (choice)
                     {
-                        Console.WriteLine("error username or password. Please Enter again!");
-                        continue;
+                        case "Y":
+                            continue;
+                        case "y":
+                            continue;
+                        case "N":
+                            Menuchoice(null);
+                            break;
+                        case "n":
+                            Menuchoice(null);
+                            break;
+                        default:
+                            continue;
                     }
                 }
-                if(flag == 1){
+                try
+                {
+                    cs = csbl.Login(usname, pw);
+                }
+                catch (System.NullReferenceException)
+                {
+                    Console.Write("Mất kết nối, bạn có muốn đăng nhập lại không? (Y/N)");
+                    choice = Console.ReadLine().ToUpper();
+                    while (true)
+                    {
+                        if (choice != "Y" && choice != "N")
+                        {
+                            Console.Write("Bạn chỉ được nhập (Y/N): ");
+                            choice = Console.ReadLine().ToUpper();
+                            continue;
+                        }
+                        break;
+                    }
+
+                    switch (choice)
+                    {
+                        case "Y":
+                            continue;
+                        case "y":
+                            continue;
+                        case "N":
+                            Menuchoice(null);
+                            break;
+                        case "n":
+                            Menuchoice(null);
+                            break;
+                        default:
+                            continue;
+                    }
+                }
+
+                if (cs == null)
+                {
+                    Console.Write("Tai khoan hoac mat khau khong dung, Ban co muon nhap lai khong(Y/N)? ");
+                    choice = Console.ReadLine().ToUpper();
+                    while (true)
+                    {
+                        if (choice != "Y" && choice != "N")
+                        {
+                            Console.Write("Bạn chỉ được nhập (Y/N): ");
+                            choice = Console.ReadLine().ToUpper();
+                            continue;
+                        }
+                        break;
+                    }
+                    switch (choice)
+                    {
+                        case "Y":
+                            continue;
+                        case "y":
+                            continue;
+                        case "N":
+                            Menuchoice(null);
+                            break;
+                        case "n":
+                            Menuchoice(null);
+                            break;
+                        default:
+                            continue;
+                    }
+                }
+                break;
+            }
+            if (cs != null)
+            {
+                Console.WriteLine("Dang nhap thanh cong! Chao mung ban den voi FootballClub Tikceting System!");
+                Thread.Sleep(1000);
+                MenuTicket(cs);
+            }
+        }
+        public bool validate(string str)
+        {
+            Regex regex = new Regex("[a-zA-Z0-9_]");
+            MatchCollection matchCollectionstr = regex.Matches(str);
+            if (matchCollectionstr.Count < str.Length)
+            {
+                return false;
+            }
+            return true;
+        }
+        public string Password()
+        {
+            StringBuilder sb = new StringBuilder();
+            while (true)
+            {
+                ConsoleKeyInfo cki = Console.ReadKey(true);
+                if (cki.Key == ConsoleKey.Enter)
+                {
+                    Console.WriteLine();
                     break;
                 }
-            }
+                if (cki.Key == ConsoleKey.Backspace)
+                {
+                    if (sb.Length > 0)
+                    {
+                        Console.SetCursorPosition(Console.CursorLeft - 1, Console.CursorTop);
+                        Console.Write(" ");
+                        Console.SetCursorPosition(Console.CursorLeft - 1, Console.CursorTop);
+                        sb.Length--;
+                    }
+                    continue;
+                }
+                Console.Write('*');
 
+                sb.Append(cki.KeyChar);
+            }
+            return sb.ToString();
+        }
+        public void MenuTicket(Customers cs)
+        {
+            Console.Clear();
+            string[] item = { "Create Cart", "View Cart", "Exit" };
+            int choice = Menu("FootballClubTicketing System", item);
+            switch (choice)
+            {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    Menuchoice(null);
+                    break;
+            }
         }
         public short Menu(string title, string[] menuItems)
         {
