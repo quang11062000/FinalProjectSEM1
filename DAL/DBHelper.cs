@@ -1,5 +1,5 @@
 using MySql.Data.MySqlClient;
-class Dbhelper
+class DBHelper
 {
     private static MySqlConnection connection;
     public static MySqlConnection GetConnection()
@@ -13,7 +13,7 @@ class Dbhelper
                                 password = dong2k;
                                  port = 3306;
                                  database = footballclubtickets;"
-            }; 
+            };
         }
         return connection;
 

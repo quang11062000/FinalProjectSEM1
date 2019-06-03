@@ -201,13 +201,9 @@ namespace PL
             switch (choice)
             {
                 case 1:
-                    ScheduleBL schedu = new ScheduleBL();
-                    List<Schedule> list = schedu.DisplaySchedule();
-                    Console.WriteLine("|{0,-10}|{1,-30}|{2,-20}|{3,-20}|{4,-20}|", "Match_id", "Match_name", "Match_day", "Match_time", "Stadium");
-                    foreach (var item1 in list)
-                    {
-                        Console.WriteLine("|{0,-10}|{1,-30}|{2,-20}|{3,-20}|{4,-20}|", item1.M.MatchID, string.Concat(item1.T.TeamName, ' ', "vs", ' ', item1.TeamAway), item1.M.MatchDay, item1.M.MatchTime, item1.T.St.StadiumName);
-                    }
+                    Console_BuyTickets cb = new Console_BuyTickets();
+                    // cb.Display();
+                    cb.DisplayNumberTicketofMatch();
                     break;
                 case 2:
                     break;

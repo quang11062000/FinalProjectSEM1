@@ -17,8 +17,8 @@ namespace DAL
                 String querry = @"select m.match_id,t.team_name,md.team_away,m.match_date, m.match_time, s.st_name
                                 from matches m inner join matchdetails md on m.match_id = md.match_id inner join teams t on t.team_id = md.team_id 
                                 inner join stadiums s on s.st_id = t.st_id;";
-                Dbhelper.OpenConnection();
-                reader = Dbhelper.ExecuteQuerry(querry);
+                DBHelper.OpenConnection();
+                reader = DBHelper.ExecuteQuerry(querry);
 
                 Schedule Schedule = null;
                 while (reader.Read())
@@ -32,7 +32,7 @@ namespace DAL
             {
                 listsche = null;
             }
-            Dbhelper.CloseConnection();
+           DBHelper.CloseConnection();
             return listsche;
 
         }
