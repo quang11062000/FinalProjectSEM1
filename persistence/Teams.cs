@@ -1,7 +1,7 @@
 using System;
 namespace persistence
 {
-    class Teams
+   public class Teams
     {
         private int teamID;
         private string teamName;
@@ -9,7 +9,7 @@ namespace persistence
 
         public int TeamID { get => teamID; set => teamID = value; }
         public string TeamName { get => teamName; set => teamName = value; }
-        internal Stadiums St { get => st; set => st = value; }
+        public Stadiums St { get => st; set => st = value; }
 
         public Teams()
         {

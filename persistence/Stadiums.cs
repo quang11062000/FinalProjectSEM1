@@ -1,7 +1,7 @@
 using System;
 namespace persistence
 {
-    class Stadiums
+     public  class Stadiums
     {
         private int stadiumID;
         private string stadiumName;

@@ -11,6 +11,6 @@ namespace BL
         {
             sche = new ScheduleDAL();
         }
-        public List<Schedule> DisplaySchedule() => sche.Display();
+        public List<Schedule> DisplaySchedule() => sche.GetListMatchDetail();
     }
 }

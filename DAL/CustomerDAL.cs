@@ -23,14 +23,14 @@ namespace DAL
             try
             {
                 string query = @"select * from customers where cus_username = '" + usname + "'and cus_password = '" + pw + "';";
-                Dbhelper.OpenConnection();
-                reader = Dbhelper.ExecuteQuerry(query);
+                DBHelper.OpenConnection();
+                reader = DBHelper.ExecuteQuerry(query);
 
                 if (reader.Read())
                 {
                     cs = GetACC(reader);
                 }
-                Dbhelper.CloseConnection();
+               DBHelper.CloseConnection();
 
             }
             catch (System.Exception)
