@@ -1,7 +1,7 @@
 using System;
 namespace persistence
 {
-    class Matches
+   public class Matches
     {
          private int matchID;
          private string matchTime;

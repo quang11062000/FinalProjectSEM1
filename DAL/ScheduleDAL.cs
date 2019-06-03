@@ -9,8 +9,8 @@ namespace DAL
     public class ScheduleDAL
     {
         private static MySqlDataReader reader;
-         List<Schedule> listsche = new List<Schedule>();
-        public List<Schedule> Display()
+        List<Schedule> listsche = new List<Schedule>();
+        public List<Schedule> GetListMatchDetail()
         {
             try
             {
@@ -39,16 +39,13 @@ namespace DAL
         public Schedule GetSchedule(MySqlDataReader reader)
         {
             Schedule sche = new Schedule();
-            try
-            {
-               sche.
-            }
-            catch (System.Exception)
-            {
-
-                throw;
-            }
-            return get;
+            sche.M.MatchID = reader.GetInt32("match_id");
+            sche.T.TeamName = reader.GetString("team_name");
+            sche.TeamAway = reader.GetString("team_away");
+            sche.M.MatchDay = reader.GetString("match_date");
+            sche.M.MatchTime = reader.GetString("match_time");
+            sche.T.St.StadiumName = reader.GetString("st_name");
+            return sche;
         }
     }
 }
