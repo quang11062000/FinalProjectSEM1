@@ -1201,11 +1201,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Project_SEM1\\FinalProjectSEM1\\DAL\\DAL.csproj",
+      "projectUniqueName": "d:\\FinalProjectSEM1\\FinalProjectSEM1\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "F:\\Project_SEM1\\FinalProjectSEM1\\DAL\\DAL.csproj",
+      "projectPath": "d:\\FinalProjectSEM1\\FinalProjectSEM1\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "F:\\Project_SEM1\\FinalProjectSEM1\\DAL\\obj\\",
+      "outputPath": "d:\\FinalProjectSEM1\\FinalProjectSEM1\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1222,8 +1222,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "F:\\Project_SEM1\\FinalProjectSEM1\\persistence\\persistence.csproj": {
-              "projectPath": "F:\\Project_SEM1\\FinalProjectSEM1\\persistence\\persistence.csproj"
+            "d:\\FinalProjectSEM1\\FinalProjectSEM1\\persistence\\persistence.csproj": {
+              "projectPath": "d:\\FinalProjectSEM1\\FinalProjectSEM1\\persistence\\persistence.csproj"
             }
           }
         }
