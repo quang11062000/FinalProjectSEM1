@@ -38,15 +38,10 @@ namespace DAL
         }
         public Schedule GetSchedule(MySqlDataReader reader)
         {
-            Schedule get = new Schedule();
+            Schedule sche = new Schedule();
             try
             {
-                get.Match_id = reader.GetInt32("match_id");
-                get.Home_team = reader.GetString("team_name");
-                get.Away_team = reader.GetString("team_away ");
-                get.Match_day = reader.GetString("match_date");
-                get.Match_time = reader.GetString("match_time");
-                get.Stadium_name = reader.GetString("st_name");
+               sche.
             }
             catch (System.Exception)
             {

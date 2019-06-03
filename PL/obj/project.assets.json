@@ -1738,11 +1738,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FinalProjectSEM1\\FinalProjectSEM1\\PL\\PL.csproj",
+      "projectUniqueName": "F:\\Project_SEM1\\FinalProjectSEM1\\PL\\PL.csproj",
       "projectName": "PL",
-      "projectPath": "D:\\FinalProjectSEM1\\FinalProjectSEM1\\PL\\PL.csproj",
+      "projectPath": "F:\\Project_SEM1\\FinalProjectSEM1\\PL\\PL.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\FinalProjectSEM1\\FinalProjectSEM1\\PL\\obj\\",
+      "outputPath": "F:\\Project_SEM1\\FinalProjectSEM1\\PL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1759,11 +1759,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\FinalProjectSEM1\\FinalProjectSEM1\\BL\\BL.csproj": {
-              "projectPath": "D:\\FinalProjectSEM1\\FinalProjectSEM1\\BL\\BL.csproj"
+            "F:\\Project_SEM1\\FinalProjectSEM1\\BL\\BL.csproj": {
+              "projectPath": "F:\\Project_SEM1\\FinalProjectSEM1\\BL\\BL.csproj"
             },
-            "D:\\FinalProjectSEM1\\FinalProjectSEM1\\persistence\\persistence.csproj": {
-              "projectPath": "D:\\FinalProjectSEM1\\FinalProjectSEM1\\persistence\\persistence.csproj"
+            "F:\\Project_SEM1\\FinalProjectSEM1\\persistence\\persistence.csproj": {
+              "projectPath": "F:\\Project_SEM1\\FinalProjectSEM1\\persistence\\persistence.csproj"
             }
           }
         }
