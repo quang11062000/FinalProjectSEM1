@@ -5,7 +5,7 @@ using DAL;
 using persistence;
 namespace DAL
 {
-    public class UserNameDAL
+    public class CustomerDAL
     {
         private static MySqlDataReader reader;
 

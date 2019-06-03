@@ -39,7 +39,7 @@ namespace PL
             string usname;
             string pw;
             string choice;
-            UserNameBL csbl = new UserNameBL();
+            CustomerBL csbl = new CustomerBL();
             Customers cs = null;
             while (true)
             {
@@ -82,7 +82,7 @@ namespace PL
                 }
                 try
                 {
-                    cs = csbl.Login(usname, pw);
+                    cs = csbl.LoginWithUserandPass(usname, pw);
                 }
                 catch (System.NullReferenceException)
                 {
@@ -201,6 +201,13 @@ namespace PL
             switch (choice)
             {
                 case 1:
+                // ScheduleBL schedu = new ScheduleBL();
+                // List<Schedule> list = schedu.DisplaySchedule();
+                // Console.WriteLine("|{0,-10}|{1,-30}|{2,-20}|{3,-20}|{4,-20}|","Match_id","Match_name","Match_day","Match_time","Stadium");
+                // foreach (var item1 in list)
+                // {
+                //     Console.WriteLine("|{0,-10}|{1,-30}|{2,-20}|{3,-20}|{4,-20}|", item1.Match_id, string.Concat(item1.Home_team,' ',"vs",' ',item1.Away_team),item1.Match_day,item1.Match_time,item1.Stadium_name);
+                // }
                     break;
                 case 2:
                     break;
