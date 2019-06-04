@@ -10,7 +10,7 @@ class DBHelper
             {
                 ConnectionString = @"server = localhost;
                                  userid = root;
-                                password = 11062000;
+                                password = dong2k;
                                  port = 3306;
                                  database = footballclubtickets;"
             };
