@@ -16,6 +16,5 @@ namespace BL
         {
             return ntmdal.GetListNumbersTicketofMatch(Match_id);
         }
-
     }    
 }

@@ -9,20 +9,21 @@ namespace DAL
     {
         private static MySqlDataReader reader;
         List<NumbersTicketofMatch> listntm = new List<NumbersTicketofMatch>();
-
+        List<NumbersTicketofMatch> listBT = new List<NumbersTicketofMatch>();
         private static NumbersTicketofMatch GetDetails(MySqlDataReader reader)
         {
             NumbersTicketofMatch ntm = new NumbersTicketofMatch();
             ntm.M.MatchID = reader.GetInt32("match_id");
             ntm.T.TicketType = reader.GetString("ticket_type");
             ntm.Amount = reader.GetInt32("amountticket");
+            ntm.T.TicketPrice = reader.GetDouble("ticket_price");
             return ntm;
         }
         public List<NumbersTicketofMatch> GetListNumbersTicketofMatch(int MatchID)
         {
 
-            string query = @"select m.match_id,t.ticket_type,tm.amountticket from matches m inner join numberticketsofmatch tm on
-                             m.match_id = tm.match_id inner join tickets t on tm.ticket_id = t.ticket_id where m.match_id =" + MatchID +";";
+            string query = @"select m.match_id,t.ticket_type,t.ticket_price,tm.amountticket from matches m inner join numberticketsofmatch tm on
+                             m.match_id = tm.match_id inner join tickets t on tm.ticket_id = t.ticket_id where m.match_id =" + MatchID + ";";
             DBHelper.OpenConnection();
             reader = DBHelper.ExecuteQuerry(query);
             NumbersTicketofMatch ntm = null;

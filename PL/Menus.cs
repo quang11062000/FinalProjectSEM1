@@ -84,9 +84,10 @@ namespace PL
                 {
                     cs = csbl.LoginWithUserandPass(usname, pw);
                 }
-                catch (System.NullReferenceException)
+                catch (Exception Ex)
                 {
-                    Console.Write("Mất kết nối, bạn có muốn đăng nhập lại không? (Y/N)");
+                    Console.WriteLine(Ex.Message);
+                    Console.Write("Bạn có muốn đăng nhập lại không? (Y/N)");
                     choice = Console.ReadLine().ToUpper();
                     while (true)
                     {
@@ -204,6 +205,7 @@ namespace PL
                     Console_BuyTickets cb = new Console_BuyTickets();
                     cb.Display();
                     cb.DisplayNumberTicketofMatch();
+                    cb.BuyTicket();
                     break;
                 case 2:
                     break;
