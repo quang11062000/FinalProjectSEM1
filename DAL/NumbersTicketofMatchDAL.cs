@@ -18,11 +18,11 @@ namespace DAL
             ntm.Amount = reader.GetInt32("amountticket");
             return ntm;
         }
-        public List<NumbersTicketofMatch> GetListNumbersTicketofMatch()
+        public List<NumbersTicketofMatch> GetListNumbersTicketofMatch(int MatchID)
         {
 
             string query = @"select m.match_id,t.ticket_type,tm.amountticket from matches m inner join numberticketsofmatch tm on
-                             m.match_id = tm.match_id inner join tickets t on tm.ticket_id = t.ticket_id;";
+                             m.match_id = tm.match_id inner join tickets t on tm.ticket_id = t.ticket_id where m.match_id =" + MatchID +";";
             DBHelper.OpenConnection();
             reader = DBHelper.ExecuteQuerry(query);
             NumbersTicketofMatch ntm = null;

@@ -12,9 +12,9 @@ namespace BL
         {
             ntmdal = new NumbersTicketofMatchDAL();
         }
-        public List<NumbersTicketofMatch> GetListNumbersTicket()
+        public List<NumbersTicketofMatch> GetListNumbersTicket(int Match_id)
         {
-            return ntmdal.GetListNumbersTicketofMatch();
+            return ntmdal.GetListNumbersTicketofMatch(Match_id);
         }
 
     }    

@@ -203,7 +203,7 @@ namespace PL
                 case 1:
                     Console_BuyTickets cb = new Console_BuyTickets();
                     cb.Display();
-                    // cb.DisplayNumberTicketofMatch();
+                    cb.DisplayNumberTicketofMatch();
                     break;
                 case 2:
                     break;
