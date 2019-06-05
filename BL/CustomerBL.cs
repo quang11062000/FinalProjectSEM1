@@ -13,7 +13,7 @@ namespace BL
         }
         public Customers LoginWithUserandPass(string usname,string pw)
         {
-            return csdal.Login(usname,pw);
+            return csdal.GetCustomerbyUserNameandPass(usname,pw);
         }
     }
 }

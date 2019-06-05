@@ -10,14 +10,14 @@ namespace DAL
         private static MySqlDataReader reader;
 
 
-        private static Customers GetACC(MySqlDataReader reader)
+        private  Customers GetCustomerInfor(MySqlDataReader reader)
         {
             Customers cs = new Customers();
             cs.UserName = reader.GetString("cus_username");
             cs.Password = reader.GetString("cus_password");
             return cs;
         }
-        public Customers Login(string usname, string pw)
+        public Customers GetCustomerbyUserNameandPass(string usname, string pw)
         {
             Customers cs = null;
             try
@@ -28,7 +28,7 @@ namespace DAL
 
                 if (reader.Read())
                 {
-                    cs = GetACC(reader);
+                    cs = GetCustomerInfor(reader);
                 }
                DBHelper.CloseConnection();
 
