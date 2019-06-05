@@ -30,7 +30,7 @@
   },
   "libraries": {
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "bLpT1f/SFlO1CzqXG12KnJzpZs6lv24uX2Rzi4Fmm0noJpNlnWRVryuO3yK18Ca04t/YHcO1e1Z0WDfjseqNzw==",
+      "sha512": "JpWOLq5XeAdJJ8WkIziDbdJ9kJQ6ucuO2IR17bQV5IBRvccOLEy3mVnUFTs9emSjXvK1h+g6IZChuWj6Thwurg==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Project_SEM1\\FinalProjectSEM1\\persistence\\persistence.csproj",
+      "projectUniqueName": "D:\\FinalProjectSEM1\\FinalProjectSEM1\\persistence\\persistence.csproj",
       "projectName": "persistence",
-      "projectPath": "F:\\Project_SEM1\\FinalProjectSEM1\\persistence\\persistence.csproj",
+      "projectPath": "D:\\FinalProjectSEM1\\FinalProjectSEM1\\persistence\\persistence.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "F:\\Project_SEM1\\FinalProjectSEM1\\persistence\\obj\\",
+      "outputPath": "D:\\FinalProjectSEM1\\FinalProjectSEM1\\persistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

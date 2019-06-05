@@ -110,15 +110,39 @@ namespace PL
         }
         public bool BuyTicket(Customers cs)
         {
+            Tickets updticket = new Tickets();
+            bool check = false;
             DisplaySchedule(cs);
-            Console.Write("input type of ticket : ");
-            string TicketType = Console.ReadLine();
-            foreach (var item in listntm)
+            while (true)
             {
-                if (TicketType == item.T.TicketType)
+                try
                 {
-                    Console.Write("Enter the number of tickets to buy:");
-                    int BuyAmount = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("input type of ticket : ");
+                    string TicketType = Console.ReadLine();
+                    foreach (var item in listntm)
+                    {
+                        if (TicketType == item.T.TicketType)
+                        {
+                            Console.Write("Enter the number of tickets to buy:");
+                            int BuyAmount = Convert.ToInt32(Console.ReadLine());
+                            if (BuyAmount > 0 || BuyAmount < 5)
+                            {
+                                item.Amount = item.Amount - BuyAmount;
+                                ntm = item;
+                                check = true;
+
+                            }
+
+                        }
+                    }
+                }
+                catch (Exception Ex)
+                {
+                    Console.WriteLine(Ex.Message);
+                }
+                if (check == true)
+                {
+                    break;
                 }
             }
             return true;

@@ -302,7 +302,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "bLpT1f/SFlO1CzqXG12KnJzpZs6lv24uX2Rzi4Fmm0noJpNlnWRVryuO3yK18Ca04t/YHcO1e1Z0WDfjseqNzw==",
+      "sha512": "JpWOLq5XeAdJJ8WkIziDbdJ9kJQ6ucuO2IR17bQV5IBRvccOLEy3mVnUFTs9emSjXvK1h+g6IZChuWj6Thwurg==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -317,7 +317,7 @@
       ]
     },
     "Microsoft.NETCore.Targets/1.1.0": {
-      "sha512": "aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
+      "sha512": "MdmNaN56ufoNpEK6K/IC6+uuYE+jkYf8uqnxvJ3BBfPVDa5lRF5m3ImY2rPKC1KH2+rrqCw24b0s/zgdzssY6w==",
       "type": "package",
       "path": "microsoft.netcore.targets/1.1.0",
       "files": [
@@ -499,7 +499,7 @@
       ]
     },
     "System.IO/4.3.0": {
-      "sha512": "3qjaHvxQPDpSOYICjUoTsmoq5u6QJAFRUITgeT/4gqkF1bajbSmb1kwSxEA8AHlofqgcKJcM8udgieRNhaJ5Cg==",
+      "sha512": "2aT8XZfmtEgEVWK9roW13NweBXjkK7aJCmMcERQwD/yODwxJcbSPhmHzipxCvI5xrfkm3w0wFYt1MsmDOzsDdg==",
       "type": "package",
       "path": "system.io/4.3.0",
       "files": [
@@ -579,7 +579,7 @@
       ]
     },
     "System.Reflection/4.3.0": {
-      "sha512": "KMiAFoW7MfJGa9nDFNcfu+FpEdiHpWgTcS2HdMpDvt9saK3y/G4GwprPyzqjFH9NTaGPQeWNHU+iDlDILj96aQ==",
+      "sha512": "ea0yLvCV+WJB8YFTcSCYSx2BOy3kIod0XpNlO6RYAUeo490oViTWYbAPSbY7rrJXQa7p3SmvyHzle9ykIposlg==",
       "type": "package",
       "path": "system.reflection/4.3.0",
       "files": [
@@ -659,7 +659,7 @@
       ]
     },
     "System.Reflection.Primitives/4.3.0": {
-      "sha512": "5RXItQz5As4xN2/YUDxdpsEkMhvw3e6aNveFXUn4Hl/udNTCNhnKp8lT9fnc3MhvGKh1baak5CovpuQUXHAlIA==",
+      "sha512": "113R/lnjG+K3sKKxxo5pyTzA0g4zHw53S7dM0DAqZ3NS4KWN3/GKdmyBg6PBZM79fgg5v3E62z2biNbCDp0qKw==",
       "type": "package",
       "path": "system.reflection.primitives/4.3.0",
       "files": [
@@ -715,7 +715,7 @@
       ]
     },
     "System.Reflection.TypeExtensions/4.1.0": {
-      "sha512": "tsQ/ptQ3H5FYfON8lL4MxRk/8kFyE0A+tGPXmVP967cT/gzLHYxIejIYSxp4JmIeFHVP78g/F2FE1mUUTbDtrg==",
+      "sha512": "AlcY/2UAWAzbOHT0ehwZdHIn1UhVBvJUw7rXaZ+FZM3s/x91cYxu/PzVGI2NVxRmYTBf8xCQ/rZqJoverimQ8A==",
       "type": "package",
       "path": "system.reflection.typeextensions/4.1.0",
       "files": [
@@ -768,7 +768,7 @@
       ]
     },
     "System.Runtime/4.3.0": {
-      "sha512": "JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
+      "sha512": "Ewd1SVEGIRKOM3zPmdZjtDN4K1+rL2Izdo8jibnz+qZO0tOw3ZGHnUT38JbAhzkxGWJP+fVulRb17ByceoCDWA==",
       "type": "package",
       "path": "system.runtime/4.3.0",
       "files": [
@@ -1000,7 +1000,7 @@
       ]
     },
     "System.Text.Encoding/4.3.0": {
-      "sha512": "BiIg+KWaSDOITze6jGQynxg64naAPtqGHBwDrLaCtixsa5bKiR8dpPOHA7ge3C0JJQizJE+sfkz1wV+BAKAYZw==",
+      "sha512": "orgm22TCcJMhi/vgF23nQbGr/T32KnEdBnyp2yjBO/H3WAak4YAaBI9n7+DaVZrp4Ki3HlJIEBBBItQio8f6pw==",
       "type": "package",
       "path": "system.text.encoding/4.3.0",
       "files": [
@@ -1115,7 +1115,7 @@
       ]
     },
     "System.Threading.Tasks/4.3.0": {
-      "sha512": "LbSxKEdOUhVe8BezB/9uOGGppt+nZf6e1VFyw6v3DN6lqitm0OSn2uXMOdtP0M3W4iMcqcivm2J6UgqiwwnXiA==",
+      "sha512": "UXr4FtcpH+m1+Jx0oxqgOssqyI+SHvbZGu5X+Q0dWDy/WmlCa8Z2McZTOVgpHbNSTtlaBG1eRBJbKFO3sbsmrg==",
       "type": "package",
       "path": "system.threading.tasks/4.3.0",
       "files": [
@@ -1201,11 +1201,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Project_SEM1\\FinalProjectSEM1\\DAL\\DAL.csproj",
+      "projectUniqueName": "D:\\FinalProjectSEM1\\FinalProjectSEM1\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "F:\\Project_SEM1\\FinalProjectSEM1\\DAL\\DAL.csproj",
+      "projectPath": "D:\\FinalProjectSEM1\\FinalProjectSEM1\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "F:\\Project_SEM1\\FinalProjectSEM1\\DAL\\obj\\",
+      "outputPath": "D:\\FinalProjectSEM1\\FinalProjectSEM1\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1222,8 +1222,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "F:\\Project_SEM1\\FinalProjectSEM1\\persistence\\persistence.csproj": {
-              "projectPath": "F:\\Project_SEM1\\FinalProjectSEM1\\persistence\\persistence.csproj"
+            "D:\\FinalProjectSEM1\\FinalProjectSEM1\\persistence\\persistence.csproj": {
+              "projectPath": "D:\\FinalProjectSEM1\\FinalProjectSEM1\\persistence\\persistence.csproj"
             }
           }
         }
