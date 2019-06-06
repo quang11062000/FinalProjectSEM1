@@ -7,6 +7,7 @@ namespace persistence
         private int orderID;
         private Customers cus;
         private string orderDate;
+        private List<OrderDetail> orderDetail;
         public Order(){
             
         }
@@ -21,5 +22,6 @@ namespace persistence
         public int OrderID { get => orderID; set => orderID = value; }
         public Customers Cus { get => cus; set => cus = value; }
         public string OrderDate { get => orderDate; set => orderDate = value; }
+        public List<OrderDetail> OrderDetail { get => orderDetail; set => orderDetail = value; }
     }
 }

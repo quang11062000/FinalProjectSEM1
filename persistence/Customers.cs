@@ -5,7 +5,7 @@ namespace persistence
 {
     public class Customers
     {
-        public string CustomerId{get;set;}
+        public int CustomerId{get;set;}
         public string UserName{get;set;}
         public string Password{get;set;}
         public string CustomerName{get;set;}
@@ -13,7 +13,7 @@ namespace persistence
         public Customers(){
 
         }
-        public Customers(string CustomerId, string UserName,string Password, string CustomerName,string CustomerPhone){
+        public Customers(int CustomerId, string UserName,string Password, string CustomerName,string CustomerPhone){
             this.CustomerId = CustomerId;
             this.UserName = UserName;
             this.Password = Password;

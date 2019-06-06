@@ -16,5 +16,8 @@ namespace BL
         {
             return ntmdal.GetListNumbersTicketofMatch(Match_id);
         }
+         public bool CreateCart(Order Order){
+             return ntmdal.CreatCart(Order);
+        }
     }    
 }

@@ -6,12 +6,13 @@ using persistence;
 
 namespace PL
 {
-   public class Console_BuyTickets
+    public class Console_BuyTickets
     {
         NumbersTicketofMatchBL ntmbl = new NumbersTicketofMatchBL();
         List<NumbersTicketofMatch> listntm = new List<NumbersTicketofMatch>();
         ScheduleBL schebl = new ScheduleBL();
         List<Schedule> list = new List<Schedule>();
+        Order itemOrder = new Order();
         Menus m = new Menus();
         NumbersTicketofMatch ntm = new NumbersTicketofMatch();
         public void DisplaySchedule(Customers cs)
@@ -163,6 +164,12 @@ namespace PL
                     {
                         if (ntm.T.TicketType == item.T.TicketType)
                         {
+                            Console.Write("Enter the number of tickets to buy:");
+                            ntm.Amount = Convert.ToInt32(Console.ReadLine());
+                            if (ntm.Amount > 0 || ntm.Amount < 5)
+                            {
+                                item.Amount = item.Amount - ntm.Amount;
+                            }
                             check = true;
                         }
                     }
@@ -202,11 +209,15 @@ namespace PL
                 }
                 check = true;
             }
-            Console.Write("Enter the number of tickets to buy:");
-            int BuyAmount = Convert.ToInt32(Console.ReadLine());
-            if (BuyAmount > 0 || BuyAmount < 5)
+            Console.WriteLine("+-----------------------------------------------------+");
+            Console.WriteLine("|{0,-10}|{1,-15}|{2,-15}|{3,-10}|", "Match_id", "Ticket_type", "Ticket_price", "Amount");
+            Console.WriteLine("-------------------------------------------------------");
+            foreach (var item in listntm)
             {
+                Console.WriteLine("|{0,-10}|{1,-15}|{2,-15}|{3,-10}|", item.M.MatchID, item.T.TicketType, string.Concat(item.T.TicketPrice, ' ', "VND"), item.Amount);
             }
+            Console.WriteLine("+-----------------------------------------------------+");
+
             return true;
         }
     }

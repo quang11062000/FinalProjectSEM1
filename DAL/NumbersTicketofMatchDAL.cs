@@ -8,7 +8,7 @@ namespace DAL
     {
         private static MySqlDataReader reader;
         List<NumbersTicketofMatch> listntm = new List<NumbersTicketofMatch>();
-        private  NumbersTicketofMatch GetTickets(MySqlDataReader reader)
+        private NumbersTicketofMatch GetTickets(MySqlDataReader reader)
         {
             NumbersTicketofMatch ntm = new NumbersTicketofMatch();
             ntm.M.MatchID = reader.GetInt32("match_id");
@@ -33,8 +33,31 @@ namespace DAL
             DBHelper.CloseConnection();
             return listntm;
         }
-        // public bool CreatCart(Order Order){
-        //     if(Order == null || Order.OrderID ==  || Order.Cus.CustomerId == null)
-        // }
+        public bool CreatCart(Order Order)
+        {
+            bool result = true;
+            if (Order == null || Order.OrderDetail == null || Order.OrderDetail.Count == 0)
+            {
+                result = false;
+            }
+            MySqlConnection connection = DBHelper.OpenConnection();
+            MySqlCommand cmd = connection.CreateCommand();
+            cmd.Connection = connection;
+            cmd.CommandText = "lock tables  orders, numberticketsofmatch, orderdetails;";
+            cmd.ExecuteNonQuery();
+            MySqlTransaction trans = connection.BeginTransaction();
+            cmd.Transaction = trans;
+            try
+            {
+
+            }
+            catch (System.Exception)
+            {
+
+                throw;
+            }
+            return result;
+        }
+
     }
 }
