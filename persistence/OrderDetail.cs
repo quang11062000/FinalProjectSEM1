@@ -3,19 +3,19 @@ namespace persistence
 {
     public class OrderDetail
     {
-        private Order order;
+        private int orderID;
         private Tickets t;
         private string description;
         public OrderDetail() { }
-        public OrderDetail(Order order, Tickets t, string Description)
+        public OrderDetail(string OrderID, Tickets t, string Description)
         {
-            Order = new Order();
+            this.OrderID = orderID;
             T = new Tickets();
-            this.Description = Description;
-        }
+            this.Description = description;
 
-        public Order Order { get => order; set => order = value; }
+        }
         public Tickets T { get => t; set => t = value; }
         public string Description { get => description; set => description = value; }
+        public int OrderID { get => orderID; set => orderID = value; }
     }
 }
