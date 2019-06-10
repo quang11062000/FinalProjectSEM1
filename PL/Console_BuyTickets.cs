@@ -1,61 +1,134 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text.RegularExpressions;
 using BL;
-using persistence;
-
-namespace PL
+using Newtonsoft.Json;
+using Persistence;
+namespace PL_console
 {
-    public class Console_BuyTickets
+    public class Consle_BuyTickets
     {
-        NumbersTicketofMatchBL ntmbl = new NumbersTicketofMatchBL();
-        List<NumbersTicketofMatch> listntm = new List<NumbersTicketofMatch>();
-        ScheduleBL schebl = new ScheduleBL();
-        List<Schedule> list = new List<Schedule>();
-        Order itemOrder = new Order();
         Menus m = new Menus();
-        NumbersTicketofMatch ntm = new NumbersTicketofMatch();
-        public void DisplaySchedule(Customers cs)
+
+        public void DisplayMatchDetails(Customers cs)
         {
-            string choice;
+            Console.Clear();
             bool check = false;
+            MatchDetailBL mdtbl = new MatchDetailBL();
+            List<MatchDetails> listmdt = null;
             try
             {
-                list = schebl.DisplaySchedule();
+                listmdt = mdtbl.GetListMatchDetail();
+                check = true;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
+                check = false;
+                Console.WriteLine("Nhan phim bat ky de tro ve menu chinh: ");
+                Console.ReadKey();
+                m.MenuTicket(cs);
             }
-            Console.WriteLine("+-------------------------------------------------------------------------------------------------------------+");
-            Console.WriteLine("|{0,-10}|{1,-50}|{2,-20}|{3,-15}|{4,-10}|", "Match_id", "Match_name", "Match_day", "Match_time", "Stadium");
-            Console.WriteLine("+-------------------------------------------------------------------------------------------------------------+");
-            foreach (var item in list)
+            if (check == true)
             {
-                Console.WriteLine("|{0,-10}|{1,-50}|{2,-20}|{3,-15}|{4,-10}|", item.M.MatchID, string.Concat(item.T.TeamName, ' ', "vs", ' ', item.TeamAway), item.M.MatchDay.Substring(0, 9), item.M.MatchTime, item.T.St.StadiumName);
+                Console.WriteLine("+-------------------------------------------------------------------------------------------------------------+");
+                Console.WriteLine("|{0,-10}|{1,-50}|{2,-20}|{3,-15}|{4,-10}|", "Match_id", "Match_name", "Match_day", "Match_time", "Stadium");
+                Console.WriteLine("+-------------------------------------------------------------------------------------------------------------+");
+                foreach (var item in listmdt)
+                {
+                    Console.WriteLine("|{0,-10}|{1,-50}|{2,-20}|{3,-15}|{4,-10}|", item.M.MatchID, string.Concat(item.T.TeamName, ' ', "vs", ' ', item.TeamAway), item.M.MatchDay.Substring(0, 9), item.M.MatchTime, item.T.St.StadiumName);
+                }
+                Console.WriteLine("+-------------------------------------------------------------------------------------------------------------+");
             }
-            Console.WriteLine("+-------------------------------------------------------------------------------------------------------------+");
-            while (check == false)
+        }
+        public void BuyTciket(Customers cs)
+        {
+            string choice;
+            Console.Write("Ban co muon mua tiep khong?");
+            choice = Console.ReadLine().ToUpper();
+            switch (choice)
             {
-                Console.Write("input matchID: ");
-                ntm.M.MatchID = Input(Console.ReadLine());
+                case "Y":
+                    CreateCart(cs);
+                    break;
+                case "y":
+                    CreateCart(cs);
+                    break;
+                case "N":
+                    m.MenuTicket(cs);
+                    break;
+                case "n":
+                    m.MenuTicket(cs);
+                    break;
+            }
+        }
+        public void Getlist(Tickets t)
+        {
+            string sJSONResponse = JsonConvert.SerializeObject(t);
+            BinaryWriter Bw;
+            try
+            {
+                FileStream fs = new FileStream("Cart.json", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+                Bw = new BinaryWriter(fs);
+                Bw.Write((string)(object)sJSONResponse);
+                fs.Close();
+            }
+            catch (System.Exception)
+            {
+
+                throw;
+            }
+            try
+            {
+                FileStream fs = new FileStream("Cart.json", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+                BinaryReader br = new BinaryReader(fs);
+                br.ReadString();
+
+                br.Close();
+
+            }
+            catch (System.Exception)
+            {
+
+                throw;
+            }
+            Tickets NumberTicket = new Tickets();
+            NumberTicket = JsonConvert.DeserializeObject<Tickets>(sJSONResponse);
+        }
+        public Tickets CreateCart(Customers cs)
+        {
+            string choice;
+            DisplayMatchDetails(cs);
+            TicketBL tkbl = new TicketBL();
+            List<Tickets> listShowTicket = new List<Tickets>();
+            Tickets t = new Tickets();
+            bool check1 = false;
+            bool check2 = false;
+            bool check3 = false;
+            while (check1 == false)
+            {
+                Console.Write("Nhap ma tran:");
+                t.MatchID = Input(Console.ReadLine());
                 try
                 {
-                    listntm = ntmbl.GetListNumbersTicket(ntm.M.MatchID);
-                    foreach (var item in listntm)
+                    listShowTicket = tkbl.GetListTicketByMatchID(t.MatchID);
+                    foreach (var item in listShowTicket)
                     {
-                        if (ntm.M.MatchID == item.M.MatchID)
+                        if (t.MatchID == item.MatchID)
                         {
-                            check = true;
+                            check1 = true;
                         }
                     }
                 }
-                catch (Exception)
+                catch (Exception e)
                 {
+                    Console.WriteLine(e.Message);
                 }
-                if (check == false)
+                if (check1 == false)
                 {
-                    Console.WriteLine("Ma tran khong dung!Ban co muon nhap lai khong(Y/N)? ");
+                    Console.WriteLine("Ma tran khong dung!Ban co muon nhap lai khong?(Y/N)");
+                    check1 = false;
                     choice = Console.ReadLine().ToUpper();
                     while (true)
                     {
@@ -83,19 +156,186 @@ namespace PL
                             continue;
                     }
                 }
-                check = true;
+                check1 = true;
             }
-            if (listntm != null)
+            if (check1 == true)
             {
                 Console.WriteLine("+-----------------------------------------------------+");
-                Console.WriteLine("|{0,-10}|{1,-15}|{2,-15}|{3,-10}|", "Match_id", "Ticket_type", "Ticket_price", "Amount");
+                Console.WriteLine("|{0,-10}|{1,-15}|{2,-15}|{3,-10}|", "TicketID", "Ticket_type", "Ticket_price", "Amount");
                 Console.WriteLine("-------------------------------------------------------");
-                foreach (var item in listntm)
+                foreach (var item in listShowTicket)
                 {
-                    Console.WriteLine("|{0,-10}|{1,-15}|{2,-15}|{3,-10}|", item.M.MatchID, item.T.TicketType, string.Concat(item.T.TicketPrice, ' ', "VND"), item.Amount);
+                    Console.WriteLine("|{0,-10}|{1,-15}|{2,-15}|{3,-10}|", item.TicketID, item.TicketType, string.Concat(item.TicketPrice, ' ', "VND"), item.Amount);
                 }
                 Console.WriteLine("+-----------------------------------------------------+");
             }
+            while (check2 == false)
+            {
+                Console.Write("Nhap loai ve:");
+                t.TicketType = Console.ReadLine();
+                if (validateString(t.TicketType) != true)
+                {
+                    Console.WriteLine("Loai ve la ki tu chu cai A-Z!Ban co muon nhap lai khong?(Y/N)");
+                    choice = Console.ReadLine().ToUpper();
+                    while (true)
+                    {
+                        if (choice != "Y" && choice != "N")
+                        {
+                            Console.Write("Bạn chỉ được nhập (Y/N): ");
+                            choice = Console.ReadLine().ToUpper();
+                            continue;
+                        }
+                        break;
+                    }
+                    switch (choice)
+                    {
+                        case "Y":
+                            continue;
+                        case "y":
+                            continue;
+                        case "N":
+                            m.MenuTicket(cs);
+                            break;
+                        case "n":
+                            m.MenuTicket(cs);
+                            break;
+                        default:
+                            continue;
+                    }
+                }
+                try
+                {
+                    foreach (var item in listShowTicket)
+                    {
+                        if (t.TicketType == item.TicketType)
+                        {
+                            check2 = true;
+                        }
+                    }
+                }
+                catch (System.Exception)
+                {
+                }
+                if (check2 == false)
+                {
+                    Console.WriteLine("Loai ve khong dung!Ban co muon nhap lai khong?(Y/N)");
+                    choice = Console.ReadLine().ToUpper();
+                    while (true)
+                    {
+                        if (choice != "Y" && choice != "N")
+                        {
+                            Console.Write("Bạn chỉ được nhập (Y/N): ");
+                            choice = Console.ReadLine().ToUpper();
+                            continue;
+                        }
+                        break;
+                    }
+                    switch (choice)
+                    {
+                        case "Y":
+                            continue;
+                        case "y":
+                            continue;
+                        case "N":
+                            m.MenuTicket(cs);
+                            break;
+                        case "n":
+                            m.MenuTicket(cs);
+                            break;
+                        default:
+                            continue;
+                    }
+                }
+            }
+            while (check3 == false)
+            {
+                Console.Write("Nhap so luong ve muon mua:");
+                t.Amount = Input(Console.ReadLine());
+                if (t.Amount > 10 || t.Amount <= 0)
+                {
+                    Console.WriteLine("Moi nguoi chi duoc mua toi da 10 ve cho 1 tran!Ban co muon nhap lai khong?(Y/N)");
+                    choice = Console.ReadLine().ToUpper();
+                    while (true)
+                    {
+                        if (choice != "Y" && choice != "N")
+                        {
+                            Console.Write("Bạn chỉ được nhập (Y/N): ");
+                            choice = Console.ReadLine().ToUpper();
+                            continue;
+                        }
+                        break;
+                    }
+                    switch (choice)
+                    {
+                        case "Y":
+                            continue;
+                        case "y":
+                            continue;
+                        case "N":
+                            m.MenuTicket(cs);
+                            break;
+                        case "n":
+                            m.MenuTicket(cs);
+                            break;
+                        default:
+                            continue;
+                    }
+                }
+                try
+                {
+                    foreach (var item in listShowTicket)
+                    {
+                        if (t.TicketType == item.TicketType && t.Amount <= item.Amount)
+                        {
+                            check3 = true;
+                        }
+                    }
+                }
+                catch (System.Exception)
+                {
+                }
+                if (check3 == false)
+                {
+                    Console.WriteLine("so luong ve da het hoac nho hon so ve muon mua!Ban co muon nhap lai khong?(Y/N)");
+                    choice = Console.ReadLine().ToUpper();
+                    while (true)
+                    {
+                        if (choice != "Y" && choice != "N")
+                        {
+                            Console.Write("Bạn chỉ được nhập (Y/N): ");
+                            choice = Console.ReadLine().ToUpper();
+                            continue;
+                        }
+                        break;
+                    }
+                    switch (choice)
+                    {
+                        case "Y":
+                            continue;
+                        case "y":
+                            continue;
+                        case "N":
+                            m.MenuTicket(cs);
+                            break;
+                        case "n":
+                            m.MenuTicket(cs);
+                            break;
+                        default:
+                            continue;
+                    }
+                }
+            }
+            return t;
+        }
+        public bool validateString(string str)
+        {
+            Regex regex = new Regex("[A-Z]");
+            MatchCollection mc = regex.Matches(str);
+            if (mc.Count < str.Length)
+            {
+                return false;
+            }
+            return true;
         }
         public int Input(string str)
         {
@@ -108,117 +348,6 @@ namespace PL
                 mc = regex.Matches(str);
             }
             return Convert.ToInt32(str);
-        }
-        public bool validateString(string str)
-        {
-            Regex regex = new Regex("[A-Z]");
-            MatchCollection mc = regex.Matches(str);
-            if (mc.Count < str.Length)
-            {
-                return false;
-            }
-            return true;
-        }
-        public bool BuyTicket(Customers cs)
-        {
-            bool check = false;
-            string choice;
-            DisplaySchedule(cs);
-            while (check == false)
-            {
-                Console.Write("input type of ticket : ");
-                ntm.T.TicketType = Console.ReadLine();
-                if (validateString(ntm.T.TicketType) == false)
-                {
-                    Console.WriteLine("Loai ve nhap vao la chu cai viet hoa!Ban co muon nhap lai khong?(Y/N);");
-                    choice = Console.ReadLine().ToUpper();
-                    while (true)
-                    {
-                        if (choice != "Y" && choice != "N")
-                        {
-                            Console.Write("Bạn chỉ được nhập (Y/N): ");
-                            choice = Console.ReadLine().ToUpper();
-                            continue;
-                        }
-                        break;
-                    }
-                    switch (choice)
-                    {
-                        case "Y":
-                            continue;
-                        case "y":
-                            continue;
-                        case "N":
-                            m.MenuTicket(cs);
-                            break;
-                        case "n":
-                            m.MenuTicket(cs);
-                            break;
-                        default:
-                            continue;
-                    }
-                }
-                try
-                {
-                    foreach (var item in listntm)
-                    {
-                        if (ntm.T.TicketType == item.T.TicketType)
-                        {
-                            Console.Write("Enter the number of tickets to buy:");
-                            ntm.Amount = Convert.ToInt32(Console.ReadLine());
-                            if (ntm.Amount > 0 || ntm.Amount < 5)
-                            {
-                                item.Amount = item.Amount - ntm.Amount;
-                            }
-                            check = true;
-                        }
-                    }
-                }
-                catch (System.Exception)
-                {
-                }
-                if (check == false)
-                {
-                    Console.WriteLine("Loai ve khong dung!Ban co muon nhap lai khong?(Y/N):");
-                    choice = Console.ReadLine().ToUpper();
-                    while (true)
-                    {
-                        if (choice != "Y" && choice != "N")
-                        {
-                            Console.Write("Bạn chỉ được nhập (Y/N): ");
-                            choice = Console.ReadLine().ToUpper();
-                            continue;
-                        }
-                        break;
-                    }
-                    switch (choice)
-                    {
-                        case "Y":
-                            continue;
-                        case "y":
-                            continue;
-                        case "N":
-                            m.MenuTicket(cs);
-                            break;
-                        case "n":
-                            m.MenuTicket(cs);
-                            break;
-                        default:
-                            continue;
-                    }
-                }
-                check = true;
-            }
-            Console.WriteLine("+-----------------------------------------------------+");
-            Console.WriteLine("|{0,-10}|{1,-15}|{2,-15}|{3,-10}|", "Match_id", "Ticket_type", "Ticket_price", "Amount");
-            Console.WriteLine("-------------------------------------------------------");
-            foreach (var item in listntm)
-            {
-                Console.WriteLine("|{0,-10}|{1,-15}|{2,-15}|{3,-10}|", item.M.MatchID, item.T.TicketType, string.Concat(item.T.TicketPrice, ' ', "VND"), item.Amount);
-            }
-            Console.WriteLine("+-----------------------------------------------------+");
-
-            return true;
         }
     }
 }

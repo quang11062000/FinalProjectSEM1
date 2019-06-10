@@ -1,43 +1,42 @@
+﻿using System;
 using MySql.Data.MySqlClient;
-class DBHelper
+namespace DAL
 {
-    private static MySqlConnection connection;
-    public static MySqlConnection GetConnection()
+    public class DBHelper
     {
-        if (connection == null)
+        private static MySqlConnection connection;
+        public static MySqlConnection GetConnection()
         {
-            connection = new MySqlConnection
+            if (connection == null)
             {
-                ConnectionString = @"server = localhost;
-                                 userid = root;
-                                password = 11062000;
-                                 port = 3306;
-                                 database = footballclubtickets;"
-            };
+                connection = new MySqlConnection
+                {
+                    ConnectionString = @"server=localhost;user id=root;
+                    port=3306;password=11062000;database=footballclubtickets"
+                };
+            }
+            return connection;
         }
-        return connection;
-
-    }
-    public static MySqlConnection OpenConnection()
-    {
-        if (connection == null)
+        public static MySqlConnection OpenConnection()
         {
-            GetConnection();
+            if (connection == null)
+            {
+                GetConnection();
+            }
+            connection.Open();
+            return connection;
         }
-        connection.Open();
-        return connection;
-    }
-    public static MySqlConnection CloseConnection()
-    {
-        if (connection != null)
+        public static void CloseConnection()
         {
-            connection.Close();
+            if (connection != null)
+            {
+                connection.Close();
+            }
         }
-        return connection;
-    }
-    public static MySqlDataReader ExecuteQuerry(string Querry)
-    {
-        MySqlCommand command = new MySqlCommand(Querry, connection);
-        return command.ExecuteReader();
+        public static MySqlDataReader ExecuteQuery(string query)
+        {
+           MySqlCommand cm = new MySqlCommand(query,connection);
+           return cm.ExecuteReader();
+        }
     }
 }

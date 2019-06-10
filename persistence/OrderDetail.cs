@@ -1,21 +1,20 @@
+using System;
 using System.Collections.Generic;
-namespace persistence
+
+namespace Persistence
 {
     public class OrderDetail
     {
-        private int orderID;
+        private Order order;
         private Tickets t;
-        private string description;
-        public OrderDetail() { }
-        public OrderDetail(string OrderID, Tickets t, string Description)
-        {
-            this.OrderID = orderID;
-            T = new Tickets();
-            this.Description = description;
 
+        public OrderDetail()
+        {
+            order = new Order();
+            T = new Tickets();
         }
+
+        public Order Order { get => order; set => order = value; }
         public Tickets T { get => t; set => t = value; }
-        public string Description { get => description; set => description = value; }
-        public int OrderID { get => orderID; set => orderID = value; }
     }
 }

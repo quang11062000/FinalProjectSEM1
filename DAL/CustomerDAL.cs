@@ -1,44 +1,35 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using MySql.Data.MySqlClient;
-using DAL;
-using persistence;
+using Persistence;
 namespace DAL
 {
     public class CustomerDAL
     {
         private static MySqlDataReader reader;
 
-
-        private  Customers GetCustomerInfor(MySqlDataReader reader)
+        private  Customers GetACC(MySqlDataReader reader)
         {
             Customers cs = new Customers();
-            cs.UserName = reader.GetString("cus_username");
-            cs.Password = reader.GetString("cus_password");
+            cs.Id = reader.GetInt32("cus_id");
+            cs.Username = reader.GetString("cus_username");
+            cs.Pass = reader.GetString("cus_password");
+            cs.CusName = reader.GetString("cus_name");
+            cs.CusPhone = reader.GetString("cus_phone");
             return cs;
         }
-        public Customers GetCustomerbyUserNameandPass(string usname, string pw)
+        public Customers Login(string usname, string pw)
         {
+            string query = @"select * from customers where cus_username = '" + usname + "'and cus_password = '" + pw + "';";
+            DBHelper.OpenConnection();
+            reader = DBHelper.ExecuteQuery(query);
             Customers cs = null;
-            try
+            if (reader.Read())
             {
-                string query = @"select * from customers where cus_username = '" + usname + "'and cus_password = '" + pw + "';";
-                DBHelper.OpenConnection();
-                reader = DBHelper.ExecuteQuerry(query);
-
-                if (reader.Read())
-                {
-                    cs = GetCustomerInfor(reader);
-                }
-               DBHelper.CloseConnection();
-
+                cs = GetACC(reader);
             }
-            catch (System.Exception)
-            {
-                cs = null;
-            }
+            DBHelper.CloseConnection();
             return cs;
         }
     }
 }
-

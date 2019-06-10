@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 using DAL;
-using persistence;
+using Persistence;
 using System.Collections.Generic;
 namespace BL
 {
@@ -11,9 +11,9 @@ namespace BL
         {
             csdal = new CustomerDAL();
         }
-        public Customers LoginWithUserandPass(string usname,string pw)
+        public Customers Login(string usname,string pw)
         {
-            return csdal.GetCustomerbyUserNameandPass(usname,pw);
+            return csdal.Login(usname,pw);
         }
     }
 }

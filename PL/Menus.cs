@@ -1,12 +1,12 @@
 using System;
 using BL;
-using persistence;
+using Persistence;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Text;
 
-namespace PL
+namespace PL_console
 {
     public class Menus
     {
@@ -31,10 +31,11 @@ namespace PL
         public void MenuLogin()
         {
             Console.Clear();
-            string line1 = "==============================================";
-            string line2 = "----------------------------------------------";
+            string line1 = "+==============================================+";
+            string line2 = "+----------------------------------------------+";
+            string menuname = "Login";
             Console.WriteLine(line1);
-            Console.WriteLine("Login");
+            Console.WriteLine("|{0,23}                       |", menuname);
             Console.WriteLine(line2);
             string usname;
             string pw;
@@ -82,12 +83,11 @@ namespace PL
                 }
                 try
                 {
-                    cs = csbl.LoginWithUserandPass(usname, pw);
+                    cs = csbl.Login(usname, pw);
                 }
-                catch (Exception Ex)
+                catch (Exception)
                 {
-                    Console.WriteLine(Ex.Message);
-                    Console.Write("Bạn có muốn đăng nhập lại không? (Y/N)");
+                    Console.WriteLine("Khong tim thay database,Ban co muon nhap lai khong(Y/N)?");
                     choice = Console.ReadLine().ToUpper();
                     while (true)
                     {
@@ -116,7 +116,6 @@ namespace PL
                             continue;
                     }
                 }
-
                 if (cs == null)
                 {
                     Console.Write("Tai khoan hoac mat khau khong dung, Ban co muon nhap lai khong(Y/N)? ");
@@ -151,7 +150,7 @@ namespace PL
             }
             if (cs != null)
             {
-                Console.WriteLine("Dang nhap thanh cong! Chao mung ban den voi FootballClub Tikceting System!");
+                Console.WriteLine("Dang nhap thanh cong!\n Chao mung ban den voi FootballClub Tikceting System!");
                 Thread.Sleep(1000);
                 MenuTicket(cs);
             }
@@ -196,33 +195,53 @@ namespace PL
         }
         public void MenuTicket(Customers cs)
         {
+            Tickets t = new Tickets();
             Console.Clear();
             string[] item = { "Create Cart", "View Cart", "Exit" };
             int choice = Menu("FootballClubTicketing System", item);
             switch (choice)
             {
                 case 1:
-                    Console_BuyTickets cb = new Console_BuyTickets();
-                    cb.BuyTicket(cs);
+                    Consle_BuyTickets cb = new Consle_BuyTickets();
+                    t = cb.CreateCart(cs);
+                    cb.Getlist(t);
+                    cb.BuyTciket(cs);
                     break;
                 case 2:
+                    MenuPay(cs);
                     break;
                 case 3:
                     Menuchoice(null);
                     break;
             }
         }
+        public void MenuPay(Customers cs)
+        {
+            Console.Clear();
+            string[] item = { "Delete Item", "Pay", "Exit" };
+            int choice = Menu("Pay Cart Menu System", item);
+            switch (choice)
+            {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    MenuTicket(cs);
+                    break;
+            }
+        }
         public short Menu(string title, string[] menuItems)
         {
             short choice = 0;
-            string line1 = "==============================================";
-            string line2 = "----------------------------------------------";
+            string line1 = "+=============================================+";
+            string line2 = "+---------------------------------------------+";
             Console.WriteLine(line1);
-            Console.WriteLine("{0}", title);
+            Console.WriteLine("|{0,-45}|", title);
             Console.WriteLine(line2);
             for (int i = 0; i < menuItems.Length; i++)
             {
-                Console.WriteLine("{0}.{1}", i + 1, menuItems[i]);
+                Console.WriteLine("|{0}.{1,-43}|", i + 1, menuItems[i]);
             }
             Console.WriteLine(line2);
             try
