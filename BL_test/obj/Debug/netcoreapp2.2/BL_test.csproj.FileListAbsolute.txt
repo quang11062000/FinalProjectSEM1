@@ -1,0 +1,44 @@
+C:\Users\QUANG\Desktop\Project (3)\Project\BL_test\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\QUANG\Desktop\Project (3)\Project\BL_test\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\QUANG\Desktop\Project (3)\Project\BL_test\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+C:\Users\QUANG\Desktop\Project (3)\Project\BL_test\bin\Debug\netcoreapp2.2\ConnectionString.txt
+C:\Users\QUANG\Desktop\Project (3)\Project\BL_test\bin\Debug\netcoreapp2.2\BL_test.deps.json
+C:\Users\QUANG\Desktop\Project (3)\Project\BL_test\bin\Debug\netcoreapp2.2\BL_test.runtimeconfig.json
+C:\Users\QUANG\Desktop\Project (3)\Project\BL_test\bin\Debug\netcoreapp2.2\BL_test.runtimeconfig.dev.json
+C:\Users\QUANG\Desktop\Project (3)\Project\BL_test\bin\Debug\netcoreapp2.2\BL_test.dll
+C:\Users\QUANG\Desktop\Project (3)\Project\BL_test\bin\Debug\netcoreapp2.2\BL_test.pdb
+C:\Users\QUANG\Desktop\Project (3)\Project\BL_test\bin\Debug\netcoreapp2.2\BL.dll
+C:\Users\QUANG\Desktop\Project (3)\Project\BL_test\bin\Debug\netcoreapp2.2\DAL.dll
+C:\Users\QUANG\Desktop\Project (3)\Project\BL_test\bin\Debug\netcoreapp2.2\Persistence.dll
+C:\Users\QUANG\Desktop\Project (3)\Project\BL_test\bin\Debug\netcoreapp2.2\BL.pdb
+C:\Users\QUANG\Desktop\Project (3)\Project\BL_test\bin\Debug\netcoreapp2.2\Persistence.pdb
+C:\Users\QUANG\Desktop\Project (3)\Project\BL_test\bin\Debug\netcoreapp2.2\DAL.pdb
+C:\Users\QUANG\Desktop\Project (3)\Project\BL_test\obj\Debug\netcoreapp2.2\BL_test.csprojAssemblyReference.cache
+C:\Users\QUANG\Desktop\Project (3)\Project\BL_test\obj\Debug\netcoreapp2.2\BL_test.csproj.CoreCompileInputs.cache
+C:\Users\QUANG\Desktop\Project (3)\Project\BL_test\obj\Debug\netcoreapp2.2\BL_test.AssemblyInfoInputs.cache
+C:\Users\QUANG\Desktop\Project (3)\Project\BL_test\obj\Debug\netcoreapp2.2\BL_test.AssemblyInfo.cs
+C:\Users\QUANG\Desktop\Project (3)\Project\BL_test\obj\Debug\netcoreapp2.2\BL_test.csproj.CopyComplete
+C:\Users\QUANG\Desktop\Project (3)\Project\BL_test\obj\Debug\netcoreapp2.2\BL_test.dll
+C:\Users\QUANG\Desktop\Project (3)\Project\BL_test\obj\Debug\netcoreapp2.2\BL_test.pdb
+D:\FinalProjectSEM1\Project\BL_test\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+D:\FinalProjectSEM1\Project\BL_test\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+D:\FinalProjectSEM1\Project\BL_test\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+D:\FinalProjectSEM1\Project\BL_test\bin\Debug\netcoreapp2.2\ConnectionString.txt
+D:\FinalProjectSEM1\Project\BL_test\bin\Debug\netcoreapp2.2\BL_test.deps.json
+D:\FinalProjectSEM1\Project\BL_test\bin\Debug\netcoreapp2.2\BL_test.runtimeconfig.json
+D:\FinalProjectSEM1\Project\BL_test\bin\Debug\netcoreapp2.2\BL_test.runtimeconfig.dev.json
+D:\FinalProjectSEM1\Project\BL_test\bin\Debug\netcoreapp2.2\BL_test.dll
+D:\FinalProjectSEM1\Project\BL_test\bin\Debug\netcoreapp2.2\BL_test.pdb
+D:\FinalProjectSEM1\Project\BL_test\bin\Debug\netcoreapp2.2\BL.dll
+D:\FinalProjectSEM1\Project\BL_test\bin\Debug\netcoreapp2.2\DAL.dll
+D:\FinalProjectSEM1\Project\BL_test\bin\Debug\netcoreapp2.2\Persistence.dll
+D:\FinalProjectSEM1\Project\BL_test\bin\Debug\netcoreapp2.2\BL.pdb
+D:\FinalProjectSEM1\Project\BL_test\bin\Debug\netcoreapp2.2\Persistence.pdb
+D:\FinalProjectSEM1\Project\BL_test\bin\Debug\netcoreapp2.2\DAL.pdb
+D:\FinalProjectSEM1\Project\BL_test\obj\Debug\netcoreapp2.2\BL_test.csprojAssemblyReference.cache
+D:\FinalProjectSEM1\Project\BL_test\obj\Debug\netcoreapp2.2\BL_test.csproj.CoreCompileInputs.cache
+D:\FinalProjectSEM1\Project\BL_test\obj\Debug\netcoreapp2.2\BL_test.AssemblyInfoInputs.cache
+D:\FinalProjectSEM1\Project\BL_test\obj\Debug\netcoreapp2.2\BL_test.AssemblyInfo.cs
+D:\FinalProjectSEM1\Project\BL_test\obj\Debug\netcoreapp2.2\BL_test.csproj.CopyComplete
+D:\FinalProjectSEM1\Project\BL_test\obj\Debug\netcoreapp2.2\BL_test.dll
+D:\FinalProjectSEM1\Project\BL_test\obj\Debug\netcoreapp2.2\BL_test.pdb

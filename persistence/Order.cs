@@ -5,26 +5,29 @@ namespace Persistence
     public class Order
     {
         private int orderID;
-        private Customers cs;
-        private string orderDate;
-        private List<Tickets> listticket;
+        private Customer customer;
+        // private int customerID;
+        private DateTime orderDate;
+        private int orderStatus;
+        public List<Ticket> listticket{get;set;}
 
         public Order()
         {
-            cs = new Customers();
-            listticket = new List<Tickets>();
+            customer = new Customer();
+            listticket = new List<Ticket>();
         }
-
-        public Order(int orderID, Customers cs, string orderDate)
+        public Order(int orderID, Customer customer, DateTime orderDate, int orderStatus)
         {
             this.orderID = orderID;
-            this.cs = cs;
+            this.customer = customer;
             this.orderDate = orderDate;
+            this.orderStatus = orderStatus;
         }
 
         public int OrderID { get => orderID; set => orderID = value; }
-        public string OrderDate { get => orderDate; set => orderDate = value; }
-        public Customers Cs { get => cs; set => cs = value; }
-        public List<Tickets> Listticket { get => listticket; set => listticket = value; }
+        public DateTime OrderDate { get; set; }
+        public Customer Customer { get => customer; set => customer = value; }
+        // public int CustomerID { get => customerID; set => customerID = value; }
+        public int OrderStatus { get => orderStatus; set => orderStatus = value; }
     }
 }

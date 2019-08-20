@@ -1,0 +1,9 @@
+C:\Users\QUANG\Desktop\Project (3)\Project\Persistence\bin\Release\netstandard2.0\Persistence.deps.json
+C:\Users\QUANG\Desktop\Project (3)\Project\Persistence\bin\Release\netstandard2.0\Persistence.dll
+C:\Users\QUANG\Desktop\Project (3)\Project\Persistence\bin\Release\netstandard2.0\Persistence.pdb
+C:\Users\QUANG\Desktop\Project (3)\Project\Persistence\obj\Release\netstandard2.0\Persistence.csprojAssemblyReference.cache
+C:\Users\QUANG\Desktop\Project (3)\Project\Persistence\obj\Release\netstandard2.0\Persistence.csproj.CoreCompileInputs.cache
+C:\Users\QUANG\Desktop\Project (3)\Project\Persistence\obj\Release\netstandard2.0\Persistence.AssemblyInfoInputs.cache
+C:\Users\QUANG\Desktop\Project (3)\Project\Persistence\obj\Release\netstandard2.0\Persistence.AssemblyInfo.cs
+C:\Users\QUANG\Desktop\Project (3)\Project\Persistence\obj\Release\netstandard2.0\Persistence.dll
+C:\Users\QUANG\Desktop\Project (3)\Project\Persistence\obj\Release\netstandard2.0\Persistence.pdb

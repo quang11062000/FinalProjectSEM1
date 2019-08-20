@@ -6,14 +6,14 @@ namespace BL
 {
     public class TicketBL
     {
-        private TicketDAL tkdal;
+        private TicketDAL ticketDAL;
         public TicketBL()
         {
-            tkdal = new TicketDAL();
+            ticketDAL = new TicketDAL();
         }
-        public List<Tickets> GetListTicketByMatchID(int matchID)
+        public List<Ticket> GetListTicketByMatchID(int matchID)
         {
-           return tkdal.GetTicketByMatchID(matchID);
+           return ticketDAL.GetTicketByMatchID(matchID);
         }
     }
 }

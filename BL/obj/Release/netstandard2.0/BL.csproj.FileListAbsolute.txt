@@ -1,0 +1,15 @@
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\bin\Release\netstandard2.0\ConnectionString.txt
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\bin\Release\netstandard2.0\BL.deps.json
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\bin\Release\netstandard2.0\BL.dll
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\bin\Release\netstandard2.0\BL.pdb
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\bin\Release\netstandard2.0\DAL.dll
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\bin\Release\netstandard2.0\Persistence.dll
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\bin\Release\netstandard2.0\DAL.pdb
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\bin\Release\netstandard2.0\Persistence.pdb
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\obj\Release\netstandard2.0\BL.csprojAssemblyReference.cache
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\obj\Release\netstandard2.0\BL.csproj.CoreCompileInputs.cache
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\obj\Release\netstandard2.0\BL.AssemblyInfoInputs.cache
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\obj\Release\netstandard2.0\BL.AssemblyInfo.cs
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\obj\Release\netstandard2.0\BL.csproj.CopyComplete
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\obj\Release\netstandard2.0\BL.dll
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\obj\Release\netstandard2.0\BL.pdb

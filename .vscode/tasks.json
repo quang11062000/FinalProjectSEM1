@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/PL/PL.csproj"
+                "${workspaceFolder}/DAL_test/DAL_test.csproj"
             ],
             "problemMatcher": "$tsc"
         },
@@ -17,7 +17,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/PL/PL.csproj"
+                "${workspaceFolder}/DAL_test/DAL_test.csproj"
             ],
             "problemMatcher": "$tsc"
         },
@@ -28,7 +28,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/PL/PL.csproj"
+                "${workspaceFolder}/DAL_test/DAL_test.csproj"
             ],
             "problemMatcher": "$tsc"
         }

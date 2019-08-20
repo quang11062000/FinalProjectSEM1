@@ -1,28 +1,30 @@
-D:\FinalProjectSEM1\FinalProjectSEM1\BL\bin\Debug\netstandard2.0\BL.deps.json
-D:\FinalProjectSEM1\FinalProjectSEM1\BL\bin\Debug\netstandard2.0\BL.dll
-D:\FinalProjectSEM1\FinalProjectSEM1\BL\bin\Debug\netstandard2.0\BL.pdb
-D:\FinalProjectSEM1\FinalProjectSEM1\BL\bin\Debug\netstandard2.0\persistence.dll
-D:\FinalProjectSEM1\FinalProjectSEM1\BL\bin\Debug\netstandard2.0\persistence.pdb
-D:\FinalProjectSEM1\FinalProjectSEM1\BL\obj\Debug\netstandard2.0\BL.csprojAssemblyReference.cache
-D:\FinalProjectSEM1\FinalProjectSEM1\BL\obj\Debug\netstandard2.0\BL.csproj.CoreCompileInputs.cache
-D:\FinalProjectSEM1\FinalProjectSEM1\BL\obj\Debug\netstandard2.0\BL.AssemblyInfoInputs.cache
-D:\FinalProjectSEM1\FinalProjectSEM1\BL\obj\Debug\netstandard2.0\BL.AssemblyInfo.cs
-D:\FinalProjectSEM1\FinalProjectSEM1\BL\obj\Debug\netstandard2.0\BL.csproj.CopyComplete
-D:\FinalProjectSEM1\FinalProjectSEM1\BL\obj\Debug\netstandard2.0\BL.dll
-D:\FinalProjectSEM1\FinalProjectSEM1\BL\obj\Debug\netstandard2.0\BL.pdb
-F:\Project_SEM1\FinalProjectSEM1\BL\obj\Debug\netstandard2.0\BL.dll
-F:\Project_SEM1\FinalProjectSEM1\BL\obj\Debug\netstandard2.0\BL.pdb
-F:\Project_SEM1\FinalProjectSEM1\BL\bin\Debug\netstandard2.0\BL.deps.json
-F:\Project_SEM1\FinalProjectSEM1\BL\bin\Debug\netstandard2.0\BL.dll
-F:\Project_SEM1\FinalProjectSEM1\BL\bin\Debug\netstandard2.0\BL.pdb
-F:\Project_SEM1\FinalProjectSEM1\BL\bin\Debug\netstandard2.0\DAL.dll
-F:\Project_SEM1\FinalProjectSEM1\BL\bin\Debug\netstandard2.0\persistence.dll
-F:\Project_SEM1\FinalProjectSEM1\BL\bin\Debug\netstandard2.0\persistence.pdb
-F:\Project_SEM1\FinalProjectSEM1\BL\bin\Debug\netstandard2.0\DAL.pdb
-F:\Project_SEM1\FinalProjectSEM1\BL\obj\Debug\netstandard2.0\BL.csprojAssemblyReference.cache
-F:\Project_SEM1\FinalProjectSEM1\BL\obj\Debug\netstandard2.0\BL.csproj.CoreCompileInputs.cache
-F:\Project_SEM1\FinalProjectSEM1\BL\obj\Debug\netstandard2.0\BL.AssemblyInfoInputs.cache
-F:\Project_SEM1\FinalProjectSEM1\BL\obj\Debug\netstandard2.0\BL.AssemblyInfo.cs
-F:\Project_SEM1\FinalProjectSEM1\BL\obj\Debug\netstandard2.0\BL.csproj.CopyComplete
-D:\FinalProjectSEM1\FinalProjectSEM1\BL\bin\Debug\netstandard2.0\DAL.dll
-D:\FinalProjectSEM1\FinalProjectSEM1\BL\bin\Debug\netstandard2.0\DAL.pdb
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\bin\Debug\netstandard2.0\ConnectionString.txt
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\bin\Debug\netstandard2.0\BL.deps.json
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\bin\Debug\netstandard2.0\BL.dll
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\bin\Debug\netstandard2.0\BL.pdb
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\bin\Debug\netstandard2.0\DAL.dll
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\bin\Debug\netstandard2.0\Persistence.dll
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\bin\Debug\netstandard2.0\DAL.pdb
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\bin\Debug\netstandard2.0\Persistence.pdb
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\obj\Debug\netstandard2.0\BL.csprojAssemblyReference.cache
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\obj\Debug\netstandard2.0\BL.csproj.CoreCompileInputs.cache
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\obj\Debug\netstandard2.0\BL.AssemblyInfoInputs.cache
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\obj\Debug\netstandard2.0\BL.AssemblyInfo.cs
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\obj\Debug\netstandard2.0\BL.csproj.CopyComplete
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\obj\Debug\netstandard2.0\BL.dll
+C:\Users\QUANG\Desktop\Project (3)\Project\BL\obj\Debug\netstandard2.0\BL.pdb
+D:\FinalProjectSEM1\Project\BL\bin\Debug\netstandard2.0\ConnectionString.txt
+D:\FinalProjectSEM1\Project\BL\bin\Debug\netstandard2.0\BL.deps.json
+D:\FinalProjectSEM1\Project\BL\bin\Debug\netstandard2.0\BL.dll
+D:\FinalProjectSEM1\Project\BL\bin\Debug\netstandard2.0\BL.pdb
+D:\FinalProjectSEM1\Project\BL\bin\Debug\netstandard2.0\DAL.dll
+D:\FinalProjectSEM1\Project\BL\bin\Debug\netstandard2.0\Persistence.dll
+D:\FinalProjectSEM1\Project\BL\bin\Debug\netstandard2.0\DAL.pdb
+D:\FinalProjectSEM1\Project\BL\bin\Debug\netstandard2.0\Persistence.pdb
+D:\FinalProjectSEM1\Project\BL\obj\Debug\netstandard2.0\BL.csprojAssemblyReference.cache
+D:\FinalProjectSEM1\Project\BL\obj\Debug\netstandard2.0\BL.csproj.CoreCompileInputs.cache
+D:\FinalProjectSEM1\Project\BL\obj\Debug\netstandard2.0\BL.AssemblyInfoInputs.cache
+D:\FinalProjectSEM1\Project\BL\obj\Debug\netstandard2.0\BL.AssemblyInfo.cs
+D:\FinalProjectSEM1\Project\BL\obj\Debug\netstandard2.0\BL.csproj.CopyComplete
+D:\FinalProjectSEM1\Project\BL\obj\Debug\netstandard2.0\BL.dll
+D:\FinalProjectSEM1\Project\BL\obj\Debug\netstandard2.0\BL.pdb

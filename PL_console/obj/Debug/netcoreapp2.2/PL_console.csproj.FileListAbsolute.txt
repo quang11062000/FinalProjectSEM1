@@ -1,0 +1,38 @@
+C:\Users\QUANG\Desktop\Project (3)\Project\PL_console\bin\Debug\netcoreapp2.2\ConnectionString.txt
+C:\Users\QUANG\Desktop\Project (3)\Project\PL_console\bin\Debug\netcoreapp2.2\PL_console.deps.json
+C:\Users\QUANG\Desktop\Project (3)\Project\PL_console\bin\Debug\netcoreapp2.2\PL_console.runtimeconfig.json
+C:\Users\QUANG\Desktop\Project (3)\Project\PL_console\bin\Debug\netcoreapp2.2\PL_console.runtimeconfig.dev.json
+C:\Users\QUANG\Desktop\Project (3)\Project\PL_console\bin\Debug\netcoreapp2.2\PL_console.dll
+C:\Users\QUANG\Desktop\Project (3)\Project\PL_console\bin\Debug\netcoreapp2.2\PL_console.pdb
+C:\Users\QUANG\Desktop\Project (3)\Project\PL_console\bin\Debug\netcoreapp2.2\BL.dll
+C:\Users\QUANG\Desktop\Project (3)\Project\PL_console\bin\Debug\netcoreapp2.2\DAL.dll
+C:\Users\QUANG\Desktop\Project (3)\Project\PL_console\bin\Debug\netcoreapp2.2\Persistence.dll
+C:\Users\QUANG\Desktop\Project (3)\Project\PL_console\bin\Debug\netcoreapp2.2\BL.pdb
+C:\Users\QUANG\Desktop\Project (3)\Project\PL_console\bin\Debug\netcoreapp2.2\Persistence.pdb
+C:\Users\QUANG\Desktop\Project (3)\Project\PL_console\bin\Debug\netcoreapp2.2\DAL.pdb
+C:\Users\QUANG\Desktop\Project (3)\Project\PL_console\obj\Debug\netcoreapp2.2\PL_console.csprojAssemblyReference.cache
+C:\Users\QUANG\Desktop\Project (3)\Project\PL_console\obj\Debug\netcoreapp2.2\PL_console.csproj.CoreCompileInputs.cache
+C:\Users\QUANG\Desktop\Project (3)\Project\PL_console\obj\Debug\netcoreapp2.2\PL_console.AssemblyInfoInputs.cache
+C:\Users\QUANG\Desktop\Project (3)\Project\PL_console\obj\Debug\netcoreapp2.2\PL_console.AssemblyInfo.cs
+C:\Users\QUANG\Desktop\Project (3)\Project\PL_console\obj\Debug\netcoreapp2.2\PL_console.csproj.CopyComplete
+C:\Users\QUANG\Desktop\Project (3)\Project\PL_console\obj\Debug\netcoreapp2.2\PL_console.dll
+C:\Users\QUANG\Desktop\Project (3)\Project\PL_console\obj\Debug\netcoreapp2.2\PL_console.pdb
+D:\FinalProjectSEM1\Project\PL_console\bin\Debug\netcoreapp2.2\ConnectionString.txt
+D:\FinalProjectSEM1\Project\PL_console\bin\Debug\netcoreapp2.2\PL_console.deps.json
+D:\FinalProjectSEM1\Project\PL_console\bin\Debug\netcoreapp2.2\PL_console.runtimeconfig.json
+D:\FinalProjectSEM1\Project\PL_console\bin\Debug\netcoreapp2.2\PL_console.runtimeconfig.dev.json
+D:\FinalProjectSEM1\Project\PL_console\bin\Debug\netcoreapp2.2\PL_console.dll
+D:\FinalProjectSEM1\Project\PL_console\bin\Debug\netcoreapp2.2\PL_console.pdb
+D:\FinalProjectSEM1\Project\PL_console\bin\Debug\netcoreapp2.2\BL.dll
+D:\FinalProjectSEM1\Project\PL_console\bin\Debug\netcoreapp2.2\DAL.dll
+D:\FinalProjectSEM1\Project\PL_console\bin\Debug\netcoreapp2.2\Persistence.dll
+D:\FinalProjectSEM1\Project\PL_console\bin\Debug\netcoreapp2.2\BL.pdb
+D:\FinalProjectSEM1\Project\PL_console\bin\Debug\netcoreapp2.2\Persistence.pdb
+D:\FinalProjectSEM1\Project\PL_console\bin\Debug\netcoreapp2.2\DAL.pdb
+D:\FinalProjectSEM1\Project\PL_console\obj\Debug\netcoreapp2.2\PL_console.csprojAssemblyReference.cache
+D:\FinalProjectSEM1\Project\PL_console\obj\Debug\netcoreapp2.2\PL_console.csproj.CoreCompileInputs.cache
+D:\FinalProjectSEM1\Project\PL_console\obj\Debug\netcoreapp2.2\PL_console.AssemblyInfoInputs.cache
+D:\FinalProjectSEM1\Project\PL_console\obj\Debug\netcoreapp2.2\PL_console.AssemblyInfo.cs
+D:\FinalProjectSEM1\Project\PL_console\obj\Debug\netcoreapp2.2\PL_console.csproj.CopyComplete
+D:\FinalProjectSEM1\Project\PL_console\obj\Debug\netcoreapp2.2\PL_console.dll
+D:\FinalProjectSEM1\Project\PL_console\obj\Debug\netcoreapp2.2\PL_console.pdb

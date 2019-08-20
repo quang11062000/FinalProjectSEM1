@@ -6,14 +6,15 @@ namespace BL
 {
     public class CustomerBL
     {
-        private CustomerDAL csdal;
+        private CustomerDAL customerDAL;
         public CustomerBL()
         {
-            csdal = new CustomerDAL();
+            customerDAL = new CustomerDAL();
         }
-        public Customers Login(string usname,string pw)
+        public Customer GetUserByUsernameAndPass(string usname,string pw)
         {
-            return csdal.Login(usname,pw);
+            
+            return customerDAL.GetUserByUsernameAndPass(usname,pw);
         }
     }
 }
