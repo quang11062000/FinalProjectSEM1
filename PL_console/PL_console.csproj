@@ -6,7 +6,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
   <Target Name="CopyConnectionString" AfterTargets="AfterBuild">
     <Copy SourceFiles="./bin/Debug/netcoreapp2.2/ConnectionString.txt" DestinationFolder="./" />
